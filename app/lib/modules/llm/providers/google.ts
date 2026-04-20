@@ -13,7 +13,7 @@ export default class GoogleProvider extends BaseProvider {
   };
 
   staticModels: ModelInfo[] = [
-    // Gemini 3.1 Pro Preview: cutting-edge reasoning and coding
+    // Gemini 3.1 Pro Preview: cutting-edge reasoning and coding (Priority)
     {
       name: 'gemini-3.1-pro-preview',
       label: 'Gemini 3.1 Pro Preview',
@@ -31,46 +31,19 @@ export default class GoogleProvider extends BaseProvider {
       maxCompletionTokens: 32768,
     },
 
-    // Gemini 2.5 Pro: advanced reasoning with 1M context
-    {
-      name: 'gemini-2.5-pro-preview-05-06',
-      label: 'Gemini 2.5 Pro',
-      provider: 'Google',
-      maxTokenAllowed: 1000000,
-      maxCompletionTokens: 65536,
-    },
-
-    // Gemini 2.5 Flash: fast and intelligent with thinking
-    {
-      name: 'gemini-2.5-flash-preview-04-17',
-      label: 'Gemini 2.5 Flash',
-      provider: 'Google',
-      maxTokenAllowed: 1000000,
-      maxCompletionTokens: 65536,
-    },
-
-    // Gemini 2.0 Flash: stable production model
-    {
-      name: 'gemini-2.0-flash',
-      label: 'Gemini 2.0 Flash',
-      provider: 'Google',
-      maxTokenAllowed: 1000000,
-      maxCompletionTokens: 8192,
-    },
-
-    // Gemini 1.5 Pro: 2M context, set to latest alias
+    // Gemini 1.5 Pro: 2M context, set to latest alias (Stable option)
     {
       name: 'gemini-1.5-pro-latest',
-      label: 'Gemini 1.5 Pro (latest)',
+      label: 'Gemini 1.5 Pro (Latest)',
       provider: 'Google',
       maxTokenAllowed: 2000000,
       maxCompletionTokens: 8192,
     },
 
-    // Gemini 1.5 Flash: 1M context, fast and cost-effective, latest alias
+    // Gemini 1.5 Flash: 1M context, fast and cost-effective, latest alias (Fast option)
     {
       name: 'gemini-1.5-flash-latest',
-      label: 'Gemini 1.5 Flash (latest)',
+      label: 'Gemini 1.5 Flash (Latest)',
       provider: 'Google',
       maxTokenAllowed: 1000000,
       maxCompletionTokens: 8192,
