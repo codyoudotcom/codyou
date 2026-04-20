@@ -15,8 +15,7 @@ export function Header() {
         'border-bolt-elements-borderColor': chat.started,
       })}
     >
-      <div className="flex items-center gap-2 z-logo text-bolt-elements-textPrimary cursor-pointer">
-        <div className="i-ph:sidebar-simple-duotone text-xl" />
+      <div className="flex items-center z-logo text-bolt-elements-textPrimary cursor-pointer">
         <a href="/" className="text-2xl font-semibold flex items-center gap-2 select-none" style={{ letterSpacing: '-0.02em' }}>
           <span style={{ color: '#3B82F6', fontSize: '1.1em', fontWeight: 700, fontFamily: 'monospace' }}>&lt;/&gt;</span>
           <span style={{ marginLeft: '-4px' }}>
