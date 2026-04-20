@@ -13,22 +13,64 @@ export default class GoogleProvider extends BaseProvider {
   };
 
   staticModels: ModelInfo[] = [
-    /*
-     * Essential fallback models - only the most reliable/stable ones
-     * Gemini 1.5 Pro: 2M context, 8K output limit (verified from API docs)
-     */
+    // Gemini 3.1 Pro Preview: cutting-edge reasoning and coding
     {
-      name: 'gemini-1.5-pro',
-      label: 'Gemini 1.5 Pro',
+      name: 'gemini-3.1-pro-preview',
+      label: 'Gemini 3.1 Pro Preview',
+      provider: 'Google',
+      maxTokenAllowed: 1000000,
+      maxCompletionTokens: 65536,
+    },
+
+    // Gemini 3.1 Flash Lite Preview: lightweight and fast
+    {
+      name: 'gemini-3.1-flash-lite-preview',
+      label: 'Gemini 3.1 Flash Lite Preview',
+      provider: 'Google',
+      maxTokenAllowed: 1000000,
+      maxCompletionTokens: 32768,
+    },
+
+    // Gemini 2.5 Pro: advanced reasoning with 1M context
+    {
+      name: 'gemini-2.5-pro-preview-05-06',
+      label: 'Gemini 2.5 Pro',
+      provider: 'Google',
+      maxTokenAllowed: 1000000,
+      maxCompletionTokens: 65536,
+    },
+
+    // Gemini 2.5 Flash: fast and intelligent with thinking
+    {
+      name: 'gemini-2.5-flash-preview-04-17',
+      label: 'Gemini 2.5 Flash',
+      provider: 'Google',
+      maxTokenAllowed: 1000000,
+      maxCompletionTokens: 65536,
+    },
+
+    // Gemini 2.0 Flash: stable production model
+    {
+      name: 'gemini-2.0-flash',
+      label: 'Gemini 2.0 Flash',
+      provider: 'Google',
+      maxTokenAllowed: 1000000,
+      maxCompletionTokens: 8192,
+    },
+
+    // Gemini 1.5 Pro: 2M context, set to latest alias
+    {
+      name: 'gemini-1.5-pro-latest',
+      label: 'Gemini 1.5 Pro (latest)',
       provider: 'Google',
       maxTokenAllowed: 2000000,
       maxCompletionTokens: 8192,
     },
 
-    // Gemini 1.5 Flash: 1M context, 8K output limit, fast and cost-effective
+    // Gemini 1.5 Flash: 1M context, fast and cost-effective, latest alias
     {
-      name: 'gemini-1.5-flash',
-      label: 'Gemini 1.5 Flash',
+      name: 'gemini-1.5-flash-latest',
+      label: 'Gemini 1.5 Flash (latest)',
       provider: 'Google',
       maxTokenAllowed: 1000000,
       maxCompletionTokens: 8192,
