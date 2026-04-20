@@ -7,8 +7,8 @@
   "type": "module",
   "version": "1.0.0",
   "author": {
-    "name": "bolt.diy team",
-    "email": "maintainers@bolt.diy"
+    "name": "codyou team",
+    "email": "maintainers@codyou"
   },
   "scripts": {
     "deploy": "npm run build && wrangler pages deploy",

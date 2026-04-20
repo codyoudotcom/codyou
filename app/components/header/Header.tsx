@@ -17,10 +17,12 @@ export function Header() {
     >
       <div className="flex items-center gap-2 z-logo text-bolt-elements-textPrimary cursor-pointer">
         <div className="i-ph:sidebar-simple-duotone text-xl" />
-        <a href="/" className="text-2xl font-semibold text-accent flex items-center">
-          {/* <span className="i-bolt:logo-text?mask w-[46px] inline-block" /> */}
-          <img src="/logo-light-styled.png" alt="logo" className="w-[90px] inline-block dark:hidden" />
-          <img src="/logo-dark-styled.png" alt="logo" className="w-[90px] inline-block hidden dark:block" />
+        <a href="/" className="text-2xl font-semibold flex items-center gap-2 select-none" style={{ letterSpacing: '-0.02em' }}>
+          <span style={{ color: '#3B82F6', fontSize: '1.1em', fontWeight: 700, fontFamily: 'monospace' }}>&lt;/&gt;</span>
+          <span style={{ marginLeft: '-4px' }}>
+            <span style={{ color: '#3B82F6' }}>Cod</span>
+            <span className="text-bolt-elements-textPrimary">you</span>
+          </span>
         </a>
       </div>
       {chat.started && ( // Display ChatDescription and HeaderActionButtons only when the chat has started.
